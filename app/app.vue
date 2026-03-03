@@ -59,7 +59,7 @@
           </div>
           <div class="int-logo">
             <div class="int-icon">🧠</div>
-            <span>Gemini AI</span>
+            <span>Any LLM</span>
           </div>
         </div>
       </div>
@@ -91,8 +91,8 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🧠</div>
-            <h3>Long-term Memory</h3>
-            <p>Per-project memories injected into every conversation. The agent remembers your patterns and preferences.</p>
+            <h3>Bring Your Own LLM</h3>
+            <p>Works with ChatGPT, Azure OpenAI, Gemini, and more. Use your company's preferred AI provider.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
