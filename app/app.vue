@@ -173,7 +173,7 @@
         <div class="pricing-grid">
           <div class="pricing-card">
             <div class="pricing-tier">Starter</div>
-            <div class="pricing-price">$3.99<span>/mo</span></div>
+            <div class="pricing-price">€3.99<span>/mo</span></div>
             <div class="pricing-period">per user · billed monthly</div>
             <ul class="pricing-features">
               <li>✅ All integrations (GitLab, Jira, Confluence)</li>
