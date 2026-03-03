@@ -10,8 +10,8 @@
         <div class="nav-links">
           <a href="#features">Features</a>
           <a href="#how-it-works">How it works</a>
-          <a href="#install">Install</a>
-          <a href="#install" class="btn btn-primary btn-sm">Get Started</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact" class="btn btn-primary btn-sm">Contact Sales</a>
         </div>
       </div>
     </nav>
@@ -128,7 +128,7 @@
             <div class="step-number">2</div>
             <div class="step-content">
               <h3>Add your API keys</h3>
-              <p>Configure your Gemini, GitLab, Jira, and Confluence tokens in the Settings page. One-click import/export.</p>
+              <p>Configure your ChatGPT / Azure OpenAI, GitLab, Jira, and Confluence tokens in the Settings page. One-click import/export.</p>
             </div>
           </div>
           <div class="step">
@@ -158,6 +158,75 @@
             <span>✅ 61MB single binary</span>
             <span>✅ Starts on boot automatically</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Pricing</div>
+          <h2>Simple, transparent pricing</h2>
+          <p>Start free. Scale when you're ready.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-tier">Free Trial</div>
+            <div class="pricing-price">€0</div>
+            <div class="pricing-period">14 days · full access</div>
+            <ul class="pricing-features">
+              <li>✅ All integrations (GitLab, Jira, Confluence)</li>
+              <li>✅ Unlimited conversations</li>
+              <li>✅ Single user</li>
+              <li>✅ Self-hosted</li>
+            </ul>
+            <a href="#install" class="btn btn-ghost" style="width: 100%; justify-content: center">Try for free</a>
+          </div>
+          <div class="pricing-card featured">
+            <div class="pricing-popular">Most Popular</div>
+            <div class="pricing-tier">Team</div>
+            <div class="pricing-price">€29<span>/user/month</span></div>
+            <div class="pricing-period">billed annually</div>
+            <ul class="pricing-features">
+              <li>✅ Everything in Free</li>
+              <li>✅ Up to 25 users</li>
+              <li>✅ SSO / Azure AD integration</li>
+              <li>✅ Priority support</li>
+              <li>✅ Custom system prompts</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center">Contact Sales</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-tier">Enterprise</div>
+            <div class="pricing-price">Custom</div>
+            <div class="pricing-period">tailored to your organization</div>
+            <ul class="pricing-features">
+              <li>✅ Everything in Team</li>
+              <li>✅ Unlimited users</li>
+              <li>✅ On-premise LLM support</li>
+              <li>✅ Audit logging</li>
+              <li>✅ Dedicated support & SLA</li>
+              <li>✅ Custom integrations</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="install-glow"></div>
+          <h2>Ready to accelerate your team?</h2>
+          <p>Book a 15-minute demo and see how Agile Agent fits into your development workflow.</p>
+          <div class="contact-actions">
+            <a href="mailto:andreseloysv@gmail.com?subject=Agile%20Agent%20Demo%20Request" class="btn btn-primary btn-lg">📧 Request a Demo</a>
+            <a href="mailto:andreseloysv@gmail.com?subject=Agile%20Agent%20Inquiry" class="btn btn-ghost btn-lg">💬 Ask a question</a>
+          </div>
+          <p class="contact-email">Or email directly: <a href="mailto:andreseloysv@gmail.com">andreseloysv@gmail.com</a></p>
         </div>
       </div>
     </section>
@@ -659,5 +728,140 @@ a:hover { color: var(--text); }
   .install-code { flex-direction: column; }
   .install-details { flex-direction: column; align-items: center; gap: 8px; }
   .step { flex-direction: column; }
+}
+
+/* ── Pricing ─────────────────────────────────────────────────────────── */
+.pricing { padding: 100px 0; }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.pricing-card {
+  padding: 36px 32px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card.featured {
+  border-color: var(--accent);
+  box-shadow: 0 0 40px rgba(124, 92, 255, 0.15);
+}
+
+.pricing-popular {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 16px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--accent);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.pricing-tier {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.pricing-price {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.pricing-price span {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.pricing-period {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.pricing-features {
+  list-style: none;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing-features li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* ── Contact ─────────────────────────────────────────────────────────── */
+.contact-section { padding: 100px 0; }
+
+.contact-card {
+  position: relative;
+  text-align: center;
+  padding: 72px 48px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  overflow: hidden;
+}
+
+.contact-card h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.contact-card > p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-email {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.contact-email a {
+  color: var(--accent-light);
+}
+.contact-email a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .contact-card { padding: 48px 24px; }
+  .contact-actions { flex-direction: column; align-items: center; }
 }
 </style>
