@@ -172,42 +172,45 @@
         </div>
         <div class="pricing-grid">
           <div class="pricing-card">
-            <div class="pricing-tier">Free Trial</div>
+            <div class="pricing-tier">Starter</div>
             <div class="pricing-price">€0</div>
-            <div class="pricing-period">14 days · full access</div>
+            <div class="pricing-period">14-day free trial · full access</div>
             <ul class="pricing-features">
               <li>✅ All integrations (GitLab, Jira, Confluence)</li>
               <li>✅ Unlimited conversations</li>
               <li>✅ Single user</li>
               <li>✅ Self-hosted</li>
+              <li>✅ Community support</li>
             </ul>
-            <a href="#install" class="btn btn-ghost" style="width: 100%; justify-content: center">Try for free</a>
+            <a href="#install" class="btn btn-ghost" style="width: 100%; justify-content: center">Start free trial</a>
           </div>
           <div class="pricing-card featured">
             <div class="pricing-popular">Most Popular</div>
             <div class="pricing-tier">Team</div>
-            <div class="pricing-price">€29<span>/user/month</span></div>
-            <div class="pricing-period">billed annually</div>
+            <div class="pricing-price">€79<span>/user/month</span></div>
+            <div class="pricing-period">billed annually · on-premise deployment</div>
             <ul class="pricing-features">
-              <li>✅ Everything in Free</li>
-              <li>✅ Up to 25 users</li>
+              <li>✅ Everything in Starter</li>
+              <li>✅ Up to 50 users</li>
               <li>✅ SSO / Azure AD integration</li>
-              <li>✅ Priority support</li>
-              <li>✅ Custom system prompts</li>
+              <li>✅ Priority support (24h response)</li>
+              <li>✅ Custom system prompts per team</li>
+              <li>✅ Usage analytics dashboard</li>
             </ul>
             <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center">Contact Sales</a>
           </div>
           <div class="pricing-card">
             <div class="pricing-tier">Enterprise</div>
             <div class="pricing-price">Custom</div>
-            <div class="pricing-period">tailored to your organization</div>
+            <div class="pricing-period">tailored to your organization · from €50k/year</div>
             <ul class="pricing-features">
               <li>✅ Everything in Team</li>
               <li>✅ Unlimited users</li>
-              <li>✅ On-premise LLM support</li>
-              <li>✅ Audit logging</li>
-              <li>✅ Dedicated support & SLA</li>
-              <li>✅ Custom integrations</li>
+              <li>✅ On-premise LLM support (no external API)</li>
+              <li>✅ Audit logging & compliance</li>
+              <li>✅ Dedicated account manager</li>
+              <li>✅ SLA with guaranteed uptime</li>
+              <li>✅ Custom integrations & onboarding</li>
             </ul>
             <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Get a quote</a>
           </div>
