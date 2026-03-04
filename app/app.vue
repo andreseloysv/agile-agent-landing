@@ -176,31 +176,6 @@
       </div>
     </section>
 
-    <!-- Founder Story -->
-    <section class="founder-section">
-      <div class="container">
-        <div class="founder-card">
-          <div class="founder-photo-wrapper">
-            <img src="/founder.jpg" alt="Andres Eloy Sanchez Vargas — Founder of Agile Agent" class="founder-photo" />
-          </div>
-          <div class="founder-content">
-            <h2>Hey, I'm Andres 👋</h2>
-            <p>I'm the senior engineer behind <strong>DB Navigator's middleware</strong> — Europe's largest e-commerce platform after Amazon, handling <strong>500 million+ requests per day</strong> across 11 microservices. Before that, I helped <strong>RTL+</strong> (Germany's Netflix) migrate to GraphQL Federation.</p>
-            <p>After 10+ years of building high-scale systems, I realized the hardest engineering problem is never the code — it's always the requirements. <strong>50% of user stories at our organization were incorrectly specified.</strong> "Closed" tickets came back as bugs. Developers wasted weeks building the wrong thing.</p>
-            <p>So I built Agile Agent: an AI workspace that connects Jira, Confluence, and GitLab to help teams define requirements so precisely they only need to implement once.</p>
-            <div class="founder-stats">
-              <div class="founder-stat">🏗️ <strong>500M+</strong> req/day in production</div>
-              <div class="founder-stat">⚡ <strong>10+</strong> years in enterprise backends</div>
-            </div>
-            <div class="founder-links">
-              <a href="https://www.linkedin.com/in/andreseloysv/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">🔗 LinkedIn</a>
-              <a href="https://github.com/andreseloysv" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">💻 GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- The Ask Yourself Section -->
     <section class="ask-section">
       <div class="container">
@@ -320,6 +295,31 @@
             <summary>How is Agile Agent different from Copilot or Cursor?</summary>
             <p>Copilot and Cursor help you write code faster. Agile Agent helps you write the <em>right</em> code. It connects to Jira, Confluence, and GitLab to understand requirements in full context — so you build what the customer actually needs, not just what autocomplete suggests.</p>
           </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Story -->
+    <section class="founder-section">
+      <div class="container">
+        <div class="founder-card">
+          <div class="founder-photo-wrapper">
+            <img src="/founder.jpg" alt="Andres Eloy Sanchez Vargas — Founder of Agile Agent" class="founder-photo" />
+          </div>
+          <div class="founder-content">
+            <h2>Hey, I'm Andres 👋</h2>
+            <p>I'm the senior engineer behind <strong>DB Navigator's middleware</strong> — Europe's largest e-commerce platform after Amazon, handling <strong>500 million+ requests per day</strong> across 11 microservices. Before that, I helped <strong>RTL+</strong> (Germany's Netflix) migrate to GraphQL Federation.</p>
+            <p>After 10+ years of building high-scale systems, I realized the hardest engineering problem is never the code — it's always the requirements. <strong>50% of user stories at our organization were incorrectly specified.</strong> "Closed" tickets came back as bugs. Developers wasted weeks building the wrong thing.</p>
+            <p>So I built Agile Agent: an AI workspace that connects Jira, Confluence, and GitLab to help teams define requirements so precisely they only need to implement once.</p>
+            <div class="founder-stats">
+              <div class="founder-stat">🏗️ <strong>500M+</strong> req/day in production</div>
+              <div class="founder-stat">⚡ <strong>10+</strong> years in enterprise backends</div>
+            </div>
+            <div class="founder-links">
+              <a href="https://www.linkedin.com/in/andreseloysv/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">🔗 LinkedIn</a>
+              <a href="https://github.com/andreseloysv" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">💻 GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
