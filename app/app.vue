@@ -176,6 +176,32 @@
       </div>
     </section>
 
+    <!-- Founder Story -->
+    <section class="founder-section">
+      <div class="container">
+        <div class="founder-card">
+          <div class="founder-photo-wrapper">
+            <img src="/founder.jpg" alt="Andres Eloy Sanchez Vargas — Founder of Agile Agent" class="founder-photo" />
+          </div>
+          <div class="founder-content">
+            <h2>Hey, I'm Andres 👋</h2>
+            <p>I'm the senior engineer behind <strong>DB Navigator's middleware</strong> — Europe's largest e-commerce platform after Amazon, handling <strong>500 million+ requests per day</strong> across 11 microservices. Before that, I helped <strong>RTL+</strong> (Germany's Netflix) migrate to GraphQL Federation.</p>
+            <p>After 10+ years of building high-scale systems, I realized the hardest engineering problem is never the code — it's always the requirements. <strong>50% of user stories at our organization were incorrectly specified.</strong> "Closed" tickets came back as bugs. Developers wasted weeks building the wrong thing.</p>
+            <p>So I built Agile Agent: an AI workspace that connects Jira, Confluence, and GitLab to help teams define requirements so precisely they only need to implement once.</p>
+            <div class="founder-stats">
+              <div class="founder-stat">🏗️ <strong>500M+</strong> req/day in production</div>
+              <div class="founder-stat">⚡ <strong>10+</strong> years in enterprise backends</div>
+              <div class="founder-stat">🚀 Founded <strong>Venemedicinas</strong> — #1 health app in Venezuela</div>
+            </div>
+            <div class="founder-links">
+              <a href="https://www.linkedin.com/in/andreseloysv/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">🔗 LinkedIn</a>
+              <a href="https://github.com/andreseloysv" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- The Ask Yourself Section -->
     <section class="ask-section">
       <div class="container">
@@ -741,6 +767,69 @@ a:hover { color: var(--text); }
   border: 1px solid var(--border);
 }
 
+/* ── Founder ────────────────────────────────────────────────────────── */
+.founder-section { padding: 100px 0; }
+
+.founder-card {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+}
+
+.founder-photo-wrapper {
+  flex-shrink: 0;
+}
+
+.founder-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(124, 92, 255, 0.3);
+  box-shadow: 0 0 40px rgba(124, 92, 255, 0.15);
+}
+
+.founder-content h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.founder-content p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.founder-content p strong { color: var(--text); }
+
+.founder-stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.founder-stat {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+.founder-stat strong { color: var(--text); }
+
+.founder-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
 /* ── Ask Yourself ───────────────────────────────────────────────────── */
 .ask-section { padding: 100px 0; }
 
@@ -1060,5 +1149,9 @@ a:hover { color: var(--text); }
   .contact-card { padding: 48px 24px; }
   .ask-card { padding: 48px 24px; }
   .contact-actions { flex-direction: column; align-items: center; }
+  .founder-card { flex-direction: column; text-align: center; padding: 32px 24px; }
+  .founder-photo { width: 140px; height: 140px; }
+  .founder-stats { justify-content: center; }
+  .founder-links { justify-content: center; }
 }
 </style>
