@@ -332,10 +332,10 @@
           <h2>Ready to build the right thing?</h2>
           <p>Book a 15-minute demo and see how Agile Agent eliminates rework in your development workflow.</p>
           <div class="contact-actions">
-            <a href="mailto:andreseloysv@gmail.com?subject=Agile%20Agent%20Demo%20Request" class="btn btn-primary btn-lg">📧 Request a Demo</a>
-            <a href="mailto:andreseloysv@gmail.com?subject=Agile%20Agent%20Inquiry" class="btn btn-ghost btn-lg">💬 Ask a question</a>
+            <a href="mailto:contact@getagileagent.com?subject=Agile%20Agent%20Demo%20Request" class="btn btn-primary btn-lg">📧 Request a Demo</a>
+            <a href="mailto:contact@getagileagent.com?subject=Agile%20Agent%20Inquiry" class="btn btn-ghost btn-lg">💬 Ask a question</a>
           </div>
-          <p class="contact-email">Or email directly: <a href="mailto:andreseloysv@gmail.com">andreseloysv@gmail.com</a></p>
+          <p class="contact-email">Or email directly: <a href="mailto:contact@getagileagent.com">contact@getagileagent.com</a></p>
         </div>
       </div>
     </section>
@@ -354,7 +354,7 @@
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
           <a href="/impressum">Impressum</a>
-          <a href="mailto:andreseloysv@gmail.com">Contact</a>
+          <a href="mailto:contact@getagileagent.com">Contact</a>
         </div>
         <p class="footer-legal">© 2026 Agile Agent. All rights reserved.</p>
       </div>
