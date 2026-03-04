@@ -8,10 +8,10 @@
           <span class="logo-text">Agile Agent</span>
         </div>
         <div class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#how-it-works">How it works</a>
+          <a href="#problem">The Problem</a>
+          <a href="#features">How It Works</a>
           <a href="#pricing">Pricing</a>
-          <a href="#contact" class="btn btn-primary btn-sm">Contact Sales</a>
+          <a href="#contact" class="btn btn-primary btn-sm">Request a Demo</a>
         </div>
       </div>
     </nav>
@@ -20,30 +20,129 @@
     <section class="hero">
       <div class="hero-glow"></div>
       <div class="container hero-inner">
-        <div class="hero-badge">✨ Self-hosted AI agent — no cloud dependency</div>
-        <h1>Ship code faster<br>with AI that <span class="gradient-text">understands your stack</span></h1>
+        <div class="hero-badge">🎯 Build the right thing — implement once, implement right</div>
+        <h1>Stop building features<br>your customers <span class="gradient-text">didn't ask for</span></h1>
         <p class="hero-sub">
-          An AI code review agent that reads your <strong>GitLab repos</strong>,
-          <strong>Jira tickets</strong>, and <strong>Confluence docs</strong> — all in one conversation.
-          Runs as a single binary. No Node.js required.
+          <strong>50% of user stories are incorrectly specified.</strong> Requirements change mid-sprint.
+          "Closed" stories come back as bugs. Agile Agent gives teams an AI-assisted workspace
+          to define, debate, and refine requirements — so you build exactly what the customer needs.
         </p>
         <div class="hero-actions">
-          <a href="#install" class="btn btn-primary btn-lg">
-            <span>⚡</span> Install in 30 seconds
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>🎯</span> Request a Demo
           </a>
-          <a href="#features" class="btn btn-ghost btn-lg">Learn more →</a>
+          <a href="#problem" class="btn btn-ghost btn-lg">See the problem →</a>
         </div>
         <div class="hero-image">
           <div class="hero-image-glow"></div>
-          <img src="/hero-screenshot.png" alt="Agile Agent UI showing AI code review with GitLab and Jira integration" />
+          <img src="/hero-screenshot.png" alt="Agile Agent UI showing AI-assisted requirements refinement with GitLab and Jira integration" />
         </div>
       </div>
     </section>
 
-    <!-- Logos / Integrations -->
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">69%</div>
+            <div class="stat-label">of software projects fail or are challenged</div>
+            <div class="stat-source">Standish Group CHAOS Report</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">$2.41T</div>
+            <div class="stat-label">cost of poor software quality in the U.S. alone</div>
+            <div class="stat-source">CISQ, 2022</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">20–40%</div>
+            <div class="stat-label">of engineering capacity consumed by technical debt</div>
+            <div class="stat-source">McKinsey</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Problem -->
+    <section id="problem" class="problem-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">The Problem</div>
+          <h2>Agile promised speed.<br>It delivered <span class="gradient-text">rework.</span></h2>
+          <p>The Agile Manifesto was signed in 2001 by 17 developers trying to fix broken software projects. It worked — until it didn't.</p>
+        </div>
+        <div class="problems-grid">
+          <div class="problem-card">
+            <div class="problem-icon">🔄</div>
+            <h3>"Responding to change" became an excuse to never finish</h3>
+            <p>Scope creep was institutionalized and rebranded as "sprint replanning" — one of the top drivers of cost overruns.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📉</div>
+            <h3>"Working software over documentation" gutted knowledge</h3>
+            <p>Only 12% of developers feel their codebase is well-documented. Technical debt became structural, not incidental.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📊</div>
+            <h3>"Velocity" replaced quality</h3>
+            <p>Story points. Burn-down charts. Throughput. None of these measure whether the software is actually good — or what the customer actually needed.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🧩</div>
+            <h3>Two-week sprints killed systems thinking</h3>
+            <p>You don't design systems anymore — you assemble features. The result: fragmented architectures and codebases no single engineer fully understands.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Solution -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">The Solution</div>
+          <h2>Build accurate, not fast.<br><span class="gradient-text">Quality is speed.</span></h2>
+          <p>Every hour spent on rework is an hour that could have gone into upfront design. Agile Agent treats software delivery as a production system with defined inputs, quality gates, and measurable outputs.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Requirements That Stick</h3>
+            <p>AI-assisted requirement analysis pulls in Jira tickets, linked stories, and Confluence specs to surface contradictions and gaps before a single line of code is written.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Full Codebase Context</h3>
+            <p>Search across GitLab repos, read files, and understand existing architecture. The agent knows what's already built so you don't rebuild it differently.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📄</div>
+            <h3>Documentation Built In</h3>
+            <p>Architecture decisions, design rationale, and requirement traceability are captured in the conversation — not bolted on after 40 sprints.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Bring Your Own LLM</h3>
+            <p>Works with ChatGPT, Azure OpenAI, Gemini, and more. Use your company's preferred AI provider — your data stays on your infrastructure.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Self-Hosted & Secure</h3>
+            <p>Runs entirely on your infrastructure as a single binary. No data leaves your network. No cloud dependency. Your code stays yours.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Real-time Collaboration</h3>
+            <p>WebSocket-powered streaming of thinking, tool calls, and responses. Teams debate requirements together with the agent as a facilitator.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations -->
     <section class="integrations">
       <div class="container">
-        <p class="integrations-label">Integrates with your existing stack</p>
+        <p class="integrations-label">Connects to your existing stack</p>
         <div class="integration-logos">
           <div class="int-logo">
             <div class="int-icon">🦊</div>
@@ -65,99 +164,31 @@
       </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="features">
+    <!-- The Ask Yourself Section -->
+    <section class="ask-section">
       <div class="container">
-        <div class="section-header">
-          <div class="section-badge">Features</div>
-          <h2>Everything your team needs<br>to accelerate development</h2>
-          <p>Built for developers who use GitLab, Jira, and Confluence daily.</p>
-        </div>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">🔍</div>
-            <h3>GitLab Code Search</h3>
-            <p>Search across repositories, read files, and review code directly from your conversations. Full URL auto-parsing.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📋</div>
-            <h3>Jira Integration</h3>
-            <p>Fetch tickets, linked stories, and solution documents. The agent understands your project context.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📄</div>
-            <h3>Confluence Docs</h3>
-            <p>Pull architecture docs, design decisions, and runbooks into the conversation automatically.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🧠</div>
-            <h3>Bring Your Own LLM</h3>
-            <p>Works with ChatGPT, Azure OpenAI, Gemini, and more. Use your company's preferred AI provider.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Real-time Streaming</h3>
-            <p>WebSocket-powered streaming of thinking, tool calls, and responses. See exactly what the agent is doing.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Self-hosted & Secure</h3>
-            <p>Runs entirely on your machine. No data leaves your network. Your code stays yours.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section id="how-it-works" class="how-it-works">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-badge">How it works</div>
-          <h2>From install to first review<br>in under a minute</h2>
-        </div>
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Install with one command</h3>
-              <p>A single curl command downloads the binary, sets up the background service, and opens the web UI.</p>
-              <code>curl -fsSL https://...install.sh | bash</code>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Add your API keys</h3>
-              <p>Configure your ChatGPT / Azure OpenAI, GitLab, Jira, and Confluence tokens in the Settings page. One-click import/export.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Create a project & start chatting</h3>
-              <p>Point the agent at your GitLab project and Jira board, set a system prompt, and ask it anything.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Install / CTA -->
-    <section id="install" class="install-section">
-      <div class="container">
-        <div class="install-card">
+        <div class="ask-card">
           <div class="install-glow"></div>
-          <h2>Get started in 30 seconds</h2>
-          <p>One command. No Node.js. No Docker. Just a native binary that runs on macOS.</p>
-          <div class="install-code">
-            <code>curl -fsSL https://raw.githubusercontent.com/andreseloysv/agile-agent-release/main/install.sh | bash</code>
-            <button class="copy-btn" @click="copyInstall">{{ copied ? '✓ Copied' : '📋 Copy' }}</button>
+          <h2>If your team measures success in story points,<br>ask yourself:</h2>
+          <div class="ask-grid">
+            <div class="ask-item">
+              <span class="ask-icon">🐛</span>
+              <p>What's your <strong>defect rate</strong>?</p>
+            </div>
+            <div class="ask-item">
+              <span class="ask-icon">📖</span>
+              <p>What's your <strong>documentation coverage</strong>?</p>
+            </div>
+            <div class="ask-item">
+              <span class="ask-icon">🧑‍💻</span>
+              <p>How long to <strong>onboard a new engineer</strong>?</p>
+            </div>
+            <div class="ask-item">
+              <span class="ask-icon">🚨</span>
+              <p>What's your <strong>incident frequency</strong>?</p>
+            </div>
           </div>
-          <div class="install-details">
-            <span>✅ macOS (Apple Silicon & Intel)</span>
-            <span>✅ 61MB single binary</span>
-            <span>✅ Starts on boot automatically</span>
-          </div>
+          <p class="ask-cta">If you don't like the answers, it's time for a different model.</p>
         </div>
       </div>
     </section>
@@ -167,33 +198,33 @@
       <div class="container">
         <div class="section-header">
           <div class="section-badge">Pricing</div>
-          <h2>Simple, transparent pricing</h2>
-          <p>Start free. Scale when you're ready.</p>
+          <h2>Transparent, usage-based pricing</h2>
+          <p>Pay per seat plus token usage. No hidden costs. No lock-in.</p>
         </div>
         <div class="pricing-grid">
           <div class="pricing-card">
             <div class="pricing-tier">Starter</div>
-            <div class="pricing-price">€3.99<span>/mo</span></div>
-            <div class="pricing-period">per user · billed monthly</div>
+            <div class="pricing-price">€3.99<span>/seat/mo</span></div>
+            <div class="pricing-period">+ token usage costs</div>
             <ul class="pricing-features">
               <li>✅ All integrations (GitLab, Jira, Confluence)</li>
               <li>✅ Unlimited conversations</li>
-              <li>✅ Single user</li>
-              <li>✅ Self-hosted</li>
+              <li>✅ Self-hosted deployment</li>
+              <li>✅ Bring your own LLM API key</li>
               <li>✅ Community support</li>
             </ul>
-            <a href="#install" class="btn btn-ghost" style="width: 100%; justify-content: center">Start free trial</a>
+            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Get started</a>
           </div>
           <div class="pricing-card featured">
             <div class="pricing-popular">Most Popular</div>
             <div class="pricing-tier">Team</div>
-            <div class="pricing-price">€79<span>/user/month</span></div>
-            <div class="pricing-period">billed annually · on-premise deployment</div>
+            <div class="pricing-price">€79<span>/seat/mo</span></div>
+            <div class="pricing-period">+ token usage costs · on-premise</div>
             <ul class="pricing-features">
               <li>✅ Everything in Starter</li>
-              <li>✅ Up to 50 users</li>
+              <li>✅ Up to 50 seats</li>
               <li>✅ SSO / Azure AD integration</li>
-              <li>✅ Priority support (24h response)</li>
+              <li>✅ Priority support (24h SLA)</li>
               <li>✅ Custom system prompts per team</li>
               <li>✅ Usage analytics dashboard</li>
             </ul>
@@ -202,19 +233,20 @@
           <div class="pricing-card">
             <div class="pricing-tier">Enterprise</div>
             <div class="pricing-price">Custom</div>
-            <div class="pricing-period">tailored to your organization · from €50k/year</div>
+            <div class="pricing-period">volume-based pricing · enterprise licensing</div>
             <ul class="pricing-features">
               <li>✅ Everything in Team</li>
-              <li>✅ Unlimited users</li>
-              <li>✅ On-premise LLM support (no external API)</li>
-              <li>✅ Audit logging & compliance</li>
+              <li>✅ Unlimited seats</li>
+              <li>✅ On-premise LLM (no external API)</li>
               <li>✅ Dedicated account manager</li>
-              <li>✅ SLA with guaranteed uptime</li>
-              <li>✅ Custom integrations & onboarding</li>
+              <li>✅ Priority SLA & guided onboarding</li>
+              <li>✅ Audit logging & compliance</li>
+              <li>✅ Organizational volume discounts</li>
             </ul>
             <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Get a quote</a>
           </div>
         </div>
+        <p class="pricing-note">💡 Token costs are passed through at provider rates. You bring your own API key — we don't mark up LLM usage.</p>
       </div>
     </section>
 
@@ -223,8 +255,8 @@
       <div class="container">
         <div class="contact-card">
           <div class="install-glow"></div>
-          <h2>Ready to accelerate your team?</h2>
-          <p>Book a 15-minute demo and see how Agile Agent fits into your development workflow.</p>
+          <h2>Ready to build the right thing?</h2>
+          <p>Book a 15-minute demo and see how Agile Agent eliminates rework in your development workflow.</p>
           <div class="contact-actions">
             <a href="mailto:andreseloysv@gmail.com?subject=Agile%20Agent%20Demo%20Request" class="btn btn-primary btn-lg">📧 Request a Demo</a>
             <a href="mailto:andreseloysv@gmail.com?subject=Agile%20Agent%20Inquiry" class="btn btn-ghost btn-lg">💬 Ask a question</a>
@@ -241,7 +273,7 @@
           <span class="logo-icon">🤖</span>
           <span class="logo-text">Agile Agent</span>
         </div>
-        <p class="footer-copy">Built with ❤️ for developers</p>
+        <p class="footer-copy">Quality is speed. Build the right thing.</p>
       </div>
     </footer>
   </div>
@@ -274,6 +306,8 @@ function copyInstall() {
   --accent-light: #9b7fff;
   --accent-glow: rgba(124, 92, 255, 0.12);
   --gradient: linear-gradient(135deg, #7c5cff 0%, #c084fc 50%, #f472b6 100%);
+  --red: #ef4444;
+  --red-glow: rgba(239, 68, 68, 0.12);
   --radius: 12px;
   --radius-lg: 20px;
   --font: 'Inter', -apple-system, system-ui, sans-serif;
@@ -412,7 +446,7 @@ a:hover { color: var(--text); }
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-secondary);
-  max-width: 640px;
+  max-width: 680px;
   margin: 0 auto 40px;
 }
 .hero-sub strong { color: var(--text); font-weight: 600; }
@@ -443,49 +477,42 @@ a:hover { color: var(--text); }
   z-index: -1;
 }
 
-/* ── Integrations ───────────────────────────────────────────────────── */
-.integrations {
+/* ── Stats Bar ──────────────────────────────────────────────────────── */
+.stats-bar {
   padding: 64px 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
 
-.integrations-label {
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   text-align: center;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  margin-bottom: 32px;
 }
 
-.integration-logos {
-  display: flex;
-  justify-content: center;
-  gap: 64px;
-  flex-wrap: wrap;
+.stat-number {
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--red) 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
-.int-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+.stat-label {
+  font-size: 14px;
   color: var(--text-secondary);
-  font-size: 13px;
-  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 6px;
 }
 
-.int-icon {
-  font-size: 32px;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-card);
-  border-radius: 16px;
-  border: 1px solid var(--border);
+.stat-source {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 /* ── Section Headers ────────────────────────────────────────────────── */
@@ -519,6 +546,49 @@ a:hover { color: var(--text); }
 .section-header p {
   color: var(--text-secondary);
   font-size: 17px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ── Problem Section ────────────────────────────────────────────────── */
+.problem-section { padding: 100px 0; }
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.problem-card {
+  padding: 32px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--red);
+  transition: all 0.3s ease;
+}
+.problem-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.problem-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.problem-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.problem-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
 
 /* ── Features ───────────────────────────────────────────────────────── */
@@ -568,66 +638,55 @@ a:hover { color: var(--text); }
   line-height: 1.6;
 }
 
-/* ── How it works ───────────────────────────────────────────────────── */
-.how-it-works { padding: 100px 0; }
+/* ── Integrations ───────────────────────────────────────────────────── */
+.integrations {
+  padding: 64px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
 
-.steps {
-  max-width: 640px;
-  margin: 0 auto;
+.integrations-label {
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.integration-logos {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.int-logo {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.step {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-}
-
-.step-number {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
+.int-icon {
+  font-size: 32px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 800;
-  box-shadow: 0 0 20px rgba(124, 92, 255, 0.3);
-}
-
-.step-content h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.step-content p {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 12px;
-}
-
-.step-content code {
-  display: inline-block;
-  padding: 8px 14px;
-  border-radius: 8px;
   background: var(--bg-card);
+  border-radius: 16px;
   border: 1px solid var(--border);
-  font-size: 13px;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  color: var(--accent-light);
 }
 
-/* ── Install Section ────────────────────────────────────────────────── */
-.install-section { padding: 100px 0; }
+/* ── Ask Yourself ───────────────────────────────────────────────────── */
+.ask-section { padding: 100px 0; }
 
-.install-card {
+.ask-card {
   position: relative;
   text-align: center;
   padding: 72px 48px;
@@ -637,100 +696,39 @@ a:hover { color: var(--text); }
   overflow: hidden;
 }
 
-.install-glow {
-  position: absolute;
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 500px;
-  height: 300px;
-  background: radial-gradient(ellipse, rgba(124, 92, 255, 0.12) 0%, transparent 70%);
-  pointer-events: none;
+.ask-card h2 {
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.4;
 }
 
-.install-card h2 {
-  font-size: 32px;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-
-.install-card > p {
-  color: var(--text-secondary);
-  font-size: 16px;
+.ask-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   margin-bottom: 32px;
 }
 
-.install-code {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  max-width: 700px;
-  margin: 0 auto 24px;
-  padding: 16px 20px;
-  border-radius: 12px;
-  background: var(--bg);
-  border: 1px solid var(--border-strong);
+.ask-item {
+  padding: 24px 16px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
 }
 
-.install-code code {
-  flex: 1;
-  font-size: 13px;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  color: var(--accent-light);
-  text-align: left;
-  word-break: break-all;
-}
+.ask-icon { font-size: 28px; display: block; margin-bottom: 12px; }
 
-.copy-btn {
-  padding: 8px 16px;
-  border-radius: 8px;
-  background: var(--accent-glow);
-  color: var(--accent-light);
-  border: 1px solid rgba(124, 92, 255, 0.2);
-  font-family: var(--font);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-.copy-btn:hover {
-  background: rgba(124, 92, 255, 0.2);
-}
-
-.install-details {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  font-size: 13px;
+.ask-item p {
+  font-size: 14px;
   color: var(--text-secondary);
-  flex-wrap: wrap;
 }
+.ask-item strong { color: var(--text); }
 
-/* ── Footer ─────────────────────────────────────────────────────────── */
-.footer {
-  padding: 40px 0;
-  border-top: 1px solid var(--border);
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-brand { display: flex; align-items: center; gap: 10px; }
-.footer-copy { font-size: 13px; color: var(--text-muted); }
-
-/* ── Responsive ─────────────────────────────────────────────────────── */
-@media (max-width: 768px) {
-  .features-grid { grid-template-columns: 1fr; }
-  .hero-actions { flex-direction: column; align-items: center; }
-  .nav-links a:not(.btn) { display: none; }
-  .integration-logos { gap: 32px; }
-  .install-code { flex-direction: column; }
-  .install-details { flex-direction: column; align-items: center; gap: 8px; }
-  .step { flex-direction: column; }
+.ask-cta {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent-light);
 }
 
 /* ── Pricing ─────────────────────────────────────────────────────────── */
@@ -818,6 +816,13 @@ a:hover { color: var(--text); }
   line-height: 1.4;
 }
 
+.pricing-note {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
 /* ── Contact ─────────────────────────────────────────────────────────── */
 .contact-section { padding: 100px 0; }
 
@@ -851,20 +856,49 @@ a:hover { color: var(--text); }
   flex-wrap: wrap;
 }
 
-.contact-email {
-  font-size: 14px;
-  color: var(--text-muted);
-}
-.contact-email a {
-  color: var(--accent-light);
-}
-.contact-email a:hover {
-  color: var(--accent);
+.contact-email { font-size: 14px; color: var(--text-muted); }
+.contact-email a { color: var(--accent-light); }
+.contact-email a:hover { color: var(--accent); }
+
+/* ── Footer ─────────────────────────────────────────────────────────── */
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
 }
 
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand { display: flex; align-items: center; gap: 10px; }
+.footer-copy { font-size: 13px; color: var(--text-muted); }
+
+/* ── Shared ─────────────────────────────────────────────────────────── */
+.install-glow {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(124, 92, 255, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
+  .features-grid { grid-template-columns: 1fr; }
+  .problems-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; gap: 32px; }
+  .ask-grid { grid-template-columns: 1fr 1fr; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .nav-links a:not(.btn) { display: none; }
+  .integration-logos { gap: 32px; }
   .contact-card { padding: 48px 24px; }
+  .ask-card { padding: 48px 24px; }
   .contact-actions { flex-direction: column; align-items: center; }
 }
 </style>
