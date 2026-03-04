@@ -93,6 +93,9 @@
             <p>You don't design systems anymore — you assemble features. The result: fragmented architectures and codebases no single engineer fully understands.</p>
           </div>
         </div>
+        <div class="section-cta">
+          <a href="#features" class="btn btn-primary btn-lg">🎯 See how Agile Agent fixes this</a>
+        </div>
       </div>
     </section>
 
@@ -135,6 +138,9 @@
             <h3>Real-time Collaboration</h3>
             <p>WebSocket-powered streaming of thinking, tool calls, and responses. Teams debate requirements together with the agent as a facilitator.</p>
           </div>
+        </div>
+        <div class="section-cta">
+          <a href="#contact" class="btn btn-primary btn-lg">📧 See it in action — request a demo</a>
         </div>
       </div>
     </section>
@@ -209,6 +215,7 @@
         </div>
         <div class="pricing-grid">
           <div class="pricing-card">
+            <div class="pricing-trial-badge">14-day free trial</div>
             <div class="pricing-tier">Starter</div>
             <div class="pricing-price">€3.99<span>/seat/mo</span></div>
             <div class="pricing-period">+ token usage costs</div>
@@ -219,13 +226,13 @@
               <li>✅ Bring your own LLM API key</li>
               <li>✅ Community support</li>
             </ul>
-            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Get started</a>
+            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Start free trial</a>
           </div>
           <div class="pricing-card featured">
             <div class="pricing-popular">Most Popular</div>
             <div class="pricing-tier">Team</div>
-            <div class="pricing-price">€79<span>/seat/mo</span></div>
-            <div class="pricing-period">+ token usage costs · on-premise</div>
+            <div class="pricing-price"><span class="price-strikethrough">€99</span> €79<span>/seat/mo</span></div>
+            <div class="pricing-period">+ token usage costs · on-premise · launch price</div>
             <ul class="pricing-features">
               <li>✅ Everything in Starter</li>
               <li>✅ Up to 50 seats</li>
@@ -256,6 +263,42 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">FAQ</div>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How does self-hosting work?</summary>
+            <p>Agile Agent is distributed as a single binary. You run it on your server (bare metal, VM, Docker, or Kubernetes). All data — conversations, tool calls, and configurations — stays on your infrastructure. No cloud dependency.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is my code or data sent to external servers?</summary>
+            <p>Your code and project data are processed entirely on your infrastructure. The only external call is to your chosen LLM provider (e.g., Azure OpenAI) and only when you explicitly ask the agent a question. You control which LLM endpoint is used.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What LLMs are supported?</summary>
+            <p>Any OpenAI-compatible API: ChatGPT, Azure OpenAI, Google Gemini, Anthropic Claude, Ollama (local), and more. You bring your own API key — we support any provider that follows the OpenAI chat completions format.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What are the token usage costs?</summary>
+            <p>Token costs are passed through at your LLM provider's rates. We add zero markup. You use your own API key, so you pay your provider directly. Typical cost: €0.01–€0.05 per conversation depending on context length and model.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I try Agile Agent before buying?</summary>
+            <p>Yes. The Starter plan includes a 14-day free trial with full access to all features. No credit card required. For Enterprise evaluations, we offer a guided pilot program — contact us to set it up.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How is Agile Agent different from Copilot or Cursor?</summary>
+            <p>Copilot and Cursor help you write code faster. Agile Agent helps you write the <em>right</em> code. It connects to Jira, Confluence, and GitLab to understand requirements in full context — so you build what the customer actually needs, not just what autocomplete suggests.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="contact-section">
       <div class="container">
@@ -274,12 +317,21 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <span class="logo-icon">🤖</span>
-          <span class="logo-text">Agile Agent</span>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <span class="logo-icon">🤖</span>
+            <span class="logo-text">Agile Agent</span>
+          </div>
+          <p class="footer-copy">Quality is speed. Build the right thing.</p>
         </div>
-        <p class="footer-copy">Quality is speed. Build the right thing.</p>
+        <div class="footer-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/impressum">Impressum</a>
+          <a href="mailto:andreseloysv@gmail.com">Contact</a>
+        </div>
+        <p class="footer-legal">© 2026 Agile Agent. All rights reserved.</p>
       </div>
     </footer>
   </div>
@@ -866,9 +918,92 @@ a:hover { color: var(--text); }
 .contact-email a { color: var(--accent-light); }
 .contact-email a:hover { color: var(--accent); }
 
+/* ── Section CTA ────────────────────────────────────────────────────── */
+.section-cta {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* ── Pricing extras ─────────────────────────────────────────────────── */
+.pricing-trial-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  margin-bottom: 12px;
+}
+
+.price-strikethrough {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+/* ── FAQ ─────────────────────────────────────────────────────────────── */
+.faq-section { padding: 100px 0; }
+
+.faq-list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  padding: 24px 28px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+.faq-item:hover {
+  border-color: var(--border-strong);
+}
+.faq-item[open] {
+  border-color: rgba(124, 92, 255, 0.3);
+  background: var(--bg-card-hover);
+}
+
+.faq-item summary {
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  font-size: 20px;
+  color: var(--text-muted);
+  transition: transform 0.2s;
+}
+.faq-item[open] summary::after {
+  content: '−';
+  color: var(--accent-light);
+}
+
+.faq-item p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
 /* ── Footer ─────────────────────────────────────────────────────────── */
 .footer {
-  padding: 40px 0;
+  padding: 48px 0 32px;
   border-top: 1px solid var(--border);
 }
 
@@ -876,10 +1011,29 @@ a:hover { color: var(--text); }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .footer-brand { display: flex; align-items: center; gap: 10px; }
 .footer-copy { font-size: 13px; color: var(--text-muted); }
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.footer-links a {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.footer-links a:hover { color: var(--text-secondary); }
+
+.footer-legal {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
 
 /* ── Shared ─────────────────────────────────────────────────────────── */
 .install-glow {
