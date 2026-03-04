@@ -145,15 +145,21 @@
         <p class="integrations-label">Connects to your existing stack</p>
         <div class="integration-logos">
           <div class="int-logo">
-            <div class="int-icon">🦊</div>
+            <div class="int-icon">
+              <svg viewBox="0 0 380 380" width="32" height="32"><path d="M282.83 170.73l-.27-.69-26.14-68.22a6.81 6.81 0 00-2.69-3.24 7 7 0 00-8 .43 7 7 0 00-2.32 3.52l-17.65 54H154.29l-17.65-54a6.86 6.86 0 00-2.32-3.53 7 7 0 00-8-.43 6.87 6.87 0 00-2.69 3.24L97.44 170l-.26.69a48.54 48.54 0 0016.1 56.07l.09.07.24.17 39.82 29.82 19.7 14.91 12 9.06a8.07 8.07 0 009.76 0l12-9.06 19.7-14.91 40.06-30 .1-.08a48.56 48.56 0 0016.08-56.04" fill="#e24329"/><path d="M282.83 170.73l-.27-.69a115.46 115.46 0 00-44.57 26.83l-47.99 43.74 31.2 23.6 40.06-30 .1-.08a48.56 48.56 0 0016.08-56.04" fill="#fc6d26"/><path d="M155.99 264.2l19.7 14.91 12 9.06a8.07 8.07 0 009.76 0l12-9.06 19.7-14.91-31.2-23.6z" fill="#fca326"/><path d="M97.44 170.04l-.26.69a48.54 48.54 0 0016.1 56.07l.09.07.24.17 39.82 29.82 31.15-23.6-48-43.74a115.46 115.46 0 00-44.53-26.82" fill="#fc6d26"/></svg>
+            </div>
             <span>GitLab</span>
           </div>
           <div class="int-logo">
-            <div class="int-icon">📋</div>
+            <div class="int-icon">
+              <svg viewBox="0 0 256 256" width="32" height="32"><defs><linearGradient id="jira-a" x1="98.03%" x2="58.89%" y1=".61%" y2="40.72%"><stop offset="18%" stop-color="#0052CC"/><stop offset="100%" stop-color="#2684FF"/></linearGradient><linearGradient id="jira-b" x1="0%" x2="41.87%" y1="100.13%" y2="58.41%"><stop offset="18%" stop-color="#0052CC"/><stop offset="100%" stop-color="#2684FF"/></linearGradient></defs><path d="M244.66 0H121.72a55.3 55.3 0 0055.28 55.28h22.4v21.6a55.3 55.3 0 0055.28 55.28V11.02A11.03 11.03 0 00244.66 0z" fill="#2684FF"/><path d="M183.82 61.26H60.89a55.3 55.3 0 0055.28 55.28h22.4v21.6a55.3 55.3 0 0055.28 55.28V72.28a11.03 11.03 0 00-11.03-11.02z" fill="url(#jira-a)"/><path d="M122.98 122.53H0a55.3 55.3 0 0055.28 55.28h22.4v21.6a55.3 55.3 0 0055.28 55.28V133.55a11.03 11.03 0 00-10.98-11.02z" fill="url(#jira-b)"/></svg>
+            </div>
             <span>Jira</span>
           </div>
           <div class="int-logo">
-            <div class="int-icon">📄</div>
+            <div class="int-icon">
+              <svg viewBox="0 0 256 256" width="32" height="32"><defs><linearGradient id="conf-a" x1="99.14%" x2="33.8%" y1="113.9%" y2="37.76%"><stop offset="0%" stop-color="#0052CC"/><stop offset="92.3%" stop-color="#2380FB"/></linearGradient><linearGradient id="conf-b" x1=".86%" x2="66.2%" y1="-13.9%" y2="62.24%"><stop offset="0%" stop-color="#0052CC"/><stop offset="92.3%" stop-color="#2380FB"/></linearGradient></defs><path d="M9.26 187.38s-5.6 7.13 2.83 11.1l76.14 36.85c0 0 5.23 3.59 10.7-2.2 0 0 51.6-63.9 3.4-108.9-46.1-43-86.8 33.4-93.1 63.1z" fill="url(#conf-a)"/><path d="M246.74 68.62s5.6-7.13-2.83-11.1L167.77 20.67s-5.23-3.59-10.7 2.2c0 0-51.6 63.9-3.4 108.9 46.1 43 86.8-33.4 93.1-63.1z" fill="url(#conf-b)"/></svg>
+            </div>
             <span>Confluence</span>
           </div>
           <div class="int-logo">
