@@ -21,7 +21,7 @@
       <div class="hero-glow"></div>
       <div class="container hero-inner">
         <div class="hero-badge">🎯 Build the right thing — implement once, implement right</div>
-        <h1>Stop building features<br>your customers <span class="gradient-text">didn't ask for</span></h1>
+        <h1>Build the exact feature<br>your customers <span class="gradient-text">ask for</span></h1>
         <p class="hero-sub">
           <strong>50% of user stories are incorrectly specified.</strong> Requirements change mid-sprint.
           "Closed" stories come back as bugs. Agile Agent gives teams an AI-assisted workspace
