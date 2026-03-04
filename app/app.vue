@@ -191,7 +191,6 @@
             <div class="founder-stats">
               <div class="founder-stat">🏗️ <strong>500M+</strong> req/day in production</div>
               <div class="founder-stat">⚡ <strong>10+</strong> years in enterprise backends</div>
-              <div class="founder-stat">🚀 Founded <strong>Venemedicinas</strong> — #1 health app in Venezuela</div>
             </div>
             <div class="founder-links">
               <a href="https://www.linkedin.com/in/andreseloysv/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">🔗 LinkedIn</a>
