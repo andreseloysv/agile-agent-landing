@@ -20,18 +20,17 @@
     <section class="hero">
       <div class="hero-glow"></div>
       <div class="container hero-inner">
-        <div class="hero-badge">🎯 Build the right thing — implement once, implement right</div>
-        <h1>Build the exact feature<br>your customers <span class="gradient-text">ask for</span></h1>
+        <div class="hero-badge">🚀 Stop managing failure. Start engineering success.</div>
+        <h1>Stop losing millions on broken requirements.<br><span class="gradient-text">Build it right the first time.</span></h1>
         <p class="hero-sub">
-          <strong>50% of user stories are incorrectly specified.</strong> Requirements change mid-sprint.
-          "Closed" stories come back as bugs. Agile Agent gives teams an AI-assisted workspace
-          to define, debate, and refine requirements — so you build exactly what the customer needs.
+          <strong>We believe software engineering should be a victory, not a guessing game.</strong>
+          Right now, your team is wasting endless hours rewriting code because Agile promises speed but delivers a total disaster of rework. Agile Agent is the ultimate AI weapon that gives you total codebase dominance. Imagine shipping flawless systems that never come back as bugs.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg">
-            <span>🎯</span> Request a Demo
+            <span>📞</span> Talk to Andres Now
           </a>
-          <a href="#problem" class="btn btn-ghost btn-lg">See the problem →</a>
+          <a href="#problem" class="btn btn-ghost btn-lg">See the ultimate solution →</a>
         </div>
         <div class="hero-image">
           <div class="hero-image-glow"></div>
@@ -68,29 +67,29 @@
       <div class="container">
         <div class="section-header">
           <div class="section-badge">The Problem</div>
-          <h2>Agile promised speed.<br>It delivered <span class="gradient-text">rework.</span></h2>
-          <p>The Agile Manifesto was signed in 2001 by 17 developers trying to fix broken software projects. It worked — until it didn't.</p>
+          <h2>The old way of Agile is completely broken.<br><span class="gradient-text">And it's costing you a fortune.</span></h2>
+          <p>The pain of endless sprint replanning weighs tons. The discipline of upfront AI-powered design weighs ounces.</p>
         </div>
         <div class="problems-grid">
           <div class="problem-card">
             <div class="problem-icon">🔄</div>
-            <h3>"Responding to change" became an excuse to never finish</h3>
-            <p>Scope creep was institutionalized and rebranded as "sprint replanning" — one of the top drivers of cost overruns.</p>
+            <h3>Sprint Replanning is an Excuse</h3>
+            <p>Scope creep is a symptom of weak planning. Stop accepting failure as part of the process—one of the top drivers of cost overruns.</p>
           </div>
           <div class="problem-card">
             <div class="problem-icon">📉</div>
-            <h3>"Working software over documentation" gutted knowledge</h3>
-            <p>Only 12% of developers feel their codebase is well-documented. Technical debt became structural, not incidental.</p>
+            <h3>Total Loss of Knowledge</h3>
+            <p>You let developers leave and take the architectural knowledge with them. It's a huge mistake. We fix that permanently.</p>
           </div>
           <div class="problem-card">
             <div class="problem-icon">📊</div>
-            <h3>"Velocity" replaced quality</h3>
-            <p>Story points. Burn-down charts. Throughput. None of these measure whether the software is actually good — or what the customer actually needed.</p>
+            <h3>"Velocity" is a Vanity Metric</h3>
+            <p>Story points don't matter if the software is garbage. We measure success by absolute quality and zero rework.</p>
           </div>
           <div class="problem-card">
             <div class="problem-icon">🧩</div>
             <h3>Two-week sprints killed systems thinking</h3>
-            <p>You don't design systems anymore — you assemble features. The result: fragmented architectures and codebases no single engineer fully understands.</p>
+            <p>You don't design systems anymore — you assemble features. The result: fragmented architectures and massive technical debt.</p>
           </div>
         </div>
         <div class="section-cta">
@@ -104,18 +103,18 @@
       <div class="container">
         <div class="section-header">
           <div class="section-badge">The Solution</div>
-          <h2>Build accurate, not fast.<br><span class="gradient-text">Quality is speed.</span></h2>
-          <p>Every hour spent on rework is an hour that could have gone into upfront design. Agile Agent treats software delivery as a production system with defined inputs, quality gates, and measurable outputs.</p>
+          <h2>Why we built this: Because <span class="gradient-text">Elite Teams Demand Perfection.</span></h2>
+          <p>We believe in empowering engineers to be architects again. When you use Agile Agent, you aren't just buying a tool; you are buying your weekends back, your reputation, and the absolute certainty that your system won't crash.</p>
         </div>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
-            <h3>Requirements That Stick</h3>
+            <h3>Flawless Requirements</h3>
             <p>AI-assisted requirement analysis pulls in Jira tickets, linked stories, and Confluence specs to surface contradictions and gaps before a single line of code is written.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔍</div>
-            <h3>Full Codebase Context</h3>
+            <h3>Total Codebase Context</h3>
             <p>Search across GitLab repos, read files, and understand existing architecture. The agent knows what's already built so you don't rebuild it differently.</p>
           </div>
           <div class="feature-card">
@@ -130,7 +129,7 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔒</div>
-            <h3>Self-Hosted & Secure</h3>
+            <h3>Fort Knox Security</h3>
             <p>Runs entirely on your infrastructure as a single binary. No data leaves your network. No cloud dependency. Your code stays yours.</p>
           </div>
           <div class="feature-card">
@@ -181,7 +180,7 @@
       <div class="container">
         <div class="ask-card">
           <div class="install-glow"></div>
-          <h2>If your team measures success in story points,<br>ask yourself:</h2>
+          <h2>Look at your engineering metrics.<br><span class="gradient-text">Are you proud of them?</span></h2>
           <div class="ask-grid">
             <div class="ask-item">
               <span class="ask-icon">🐛</span>
@@ -200,7 +199,7 @@
               <p>What's your <strong>incident frequency</strong>?</p>
             </div>
           </div>
-          <p class="ask-cta">If you don't like the answers, it's time for a different model.</p>
+          <p class="ask-cta">If your defect rate is high and onboarding takes months, you are losing. It's time to upgrade to a winning model.</p>
         </div>
       </div>
     </section>
@@ -209,9 +208,9 @@
     <section id="pricing" class="pricing">
       <div class="container">
         <div class="section-header">
-          <div class="section-badge">Pricing</div>
-          <h2>Transparent, usage-based pricing</h2>
-          <p>Pay per seat plus token usage. No hidden costs. No lock-in.</p>
+          <div class="section-badge">Access</div>
+          <h2>Exclusive Access for Ambitious Engineering Teams</h2>
+          <p>We work closely with elite teams ready to eliminate rework permanently.</p>
         </div>
         <div class="pricing-grid">
           <div class="pricing-card">
@@ -226,7 +225,7 @@
               <li>✅ Bring your own LLM API key</li>
               <li>✅ Community support</li>
             </ul>
-            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Start free trial</a>
+            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Request Early Access</a>
           </div>
           <div class="pricing-card featured">
             <div class="pricing-popular">Most Popular</div>
@@ -241,7 +240,7 @@
               <li>✅ Custom system prompts per team</li>
               <li>✅ Usage analytics dashboard</li>
             </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center">Contact Sales</a>
+            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center">📞 Talk to Founder (Highly Recommended)</a>
           </div>
           <div class="pricing-card">
             <div class="pricing-tier">Enterprise</div>
@@ -256,7 +255,7 @@
               <li>✅ Audit logging & compliance</li>
               <li>✅ Organizational volume discounts</li>
             </ul>
-            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Get a quote</a>
+            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Get a Custom Briefing</a>
           </div>
         </div>
         <p class="pricing-note">💡 Token costs are passed through at provider rates. You bring your own API key — we don't mark up LLM usage.</p>
@@ -329,11 +328,10 @@
       <div class="container">
         <div class="contact-card">
           <div class="install-glow"></div>
-          <h2>Ready to build the right thing?</h2>
-          <p>Book a 15-minute demo and see how Agile Agent eliminates rework in your development workflow.</p>
+          <h2>Don't let your competitors deploy this before you do.</h2>
+          <p>The cost of waiting is another failed sprint. Book a private strategy call with the founder today and see how we will transform your engineering floor.</p>
           <div class="contact-actions">
-            <a href="mailto:contact@getagileagent.com?subject=Agile%20Agent%20Demo%20Request" class="btn btn-primary btn-lg">📧 Request a Demo</a>
-            <a href="mailto:contact@getagileagent.com?subject=Agile%20Agent%20Inquiry" class="btn btn-ghost btn-lg">💬 Ask a question</a>
+            <a href="mailto:contact@getagileagent.com?subject=Agile%20Agent%20Private%20Strategy%20Call" class="btn btn-primary btn-lg">📧 Contact Andres Directly</a>
           </div>
           <p class="contact-email">Or email directly: <a href="mailto:contact@getagileagent.com">contact@getagileagent.com</a></p>
         </div>
