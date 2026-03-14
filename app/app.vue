@@ -4,7 +4,7 @@
     <nav class="nav">
       <div class="container nav-inner">
         <div class="logo">
-          <span class="logo-icon">🤖</span>
+          <img src="/icon.png" class="logo-icon" alt="Agile Agent Logo" />
           <span class="logo-text">Agile Agent</span>
         </div>
         <div class="nav-links">
@@ -343,7 +343,7 @@
       <div class="container">
         <div class="footer-inner">
           <div class="footer-brand">
-            <span class="logo-icon">🤖</span>
+            <img src="/icon.png" class="logo-icon" alt="Agile Agent Logo" />
             <span class="logo-text">Agile Agent</span>
           </div>
           <p class="footer-copy">Quality is speed. Build the right thing.</p>
@@ -412,41 +412,52 @@ a:hover { color: var(--text); }
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-family: var(--font);
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.98);
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
   color: #fff;
-  box-shadow: 0 0 24px rgba(124, 92, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(124, 92, 255, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
 }
+
 .btn-primary:hover {
-  background: var(--accent-light);
-  box-shadow: 0 0 40px rgba(124, 92, 255, 0.5);
-  transform: translateY(-1px);
+  background: linear-gradient(135deg, var(--accent-light) 0%, #c084fc 100%);
+  box-shadow: 0 12px 40px rgba(124, 92, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
   color: #fff;
 }
 
 .btn-ghost {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.02);
   color: var(--text-secondary);
   border: 1px solid var(--border-strong);
-}
-.btn-ghost:hover {
-  color: var(--text);
-  border-color: rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
 }
 
-.btn-sm { padding: 8px 16px; font-size: 13px; }
-.btn-lg { padding: 14px 28px; font-size: 15px; }
+.btn-ghost:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sm { padding: 10px 20px; font-size: 14px; }
+.btn-lg { padding: 16px 36px; font-size: 16px; letter-spacing: 0.01em; }
 
 /* ── Navigation ─────────────────────────────────────────────────────── */
 .nav {
@@ -466,7 +477,7 @@ a:hover { color: var(--text); }
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo-icon { font-size: 24px; }
+.logo-icon { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
 .logo-text { font-size: 18px; font-weight: 700; color: var(--text); }
 
 .nav-links {
@@ -632,7 +643,7 @@ a:hover { color: var(--text); }
 }
 
 /* ── Problem Section ────────────────────────────────────────────────── */
-.problem-section { padding: 100px 0; }
+.problem-section { padding: 120px 0; }
 
 .problems-grid {
   display: grid;
@@ -673,7 +684,7 @@ a:hover { color: var(--text); }
 }
 
 /* ── Features ───────────────────────────────────────────────────────── */
-.features { padding: 100px 0; }
+.features { padding: 120px 0; }
 
 .features-grid {
   display: grid;
@@ -765,7 +776,7 @@ a:hover { color: var(--text); }
 }
 
 /* ── Founder ────────────────────────────────────────────────────────── */
-.founder-section { padding: 100px 0; }
+.founder-section { padding: 120px 0; }
 
 .founder-card {
   display: flex;
@@ -828,7 +839,7 @@ a:hover { color: var(--text); }
 }
 
 /* ── Ask Yourself ───────────────────────────────────────────────────── */
-.ask-section { padding: 100px 0; }
+.ask-section { padding: 120px 0; }
 
 .ask-card {
   position: relative;
@@ -876,7 +887,7 @@ a:hover { color: var(--text); }
 }
 
 /* ── Pricing ─────────────────────────────────────────────────────────── */
-.pricing { padding: 100px 0; }
+.pricing { padding: 120px 0; }
 
 .pricing-grid {
   display: grid;
@@ -968,7 +979,7 @@ a:hover { color: var(--text); }
 }
 
 /* ── Contact ─────────────────────────────────────────────────────────── */
-.contact-section { padding: 100px 0; }
+.contact-section { padding: 120px 0; }
 
 .contact-card {
   position: relative;
@@ -1034,7 +1045,7 @@ a:hover { color: var(--text); }
 }
 
 /* ── FAQ ─────────────────────────────────────────────────────────────── */
-.faq-section { padding: 100px 0; }
+.faq-section { padding: 120px 0; }
 
 .faq-list {
   max-width: 720px;
