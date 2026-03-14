@@ -20,21 +20,37 @@
     <section class="hero">
       <div class="hero-glow"></div>
       <div class="container hero-inner">
-        <div class="hero-badge">🚀 Stop managing failure. Start engineering success.</div>
+        <div class="hero-badge">🔒 Fort Knox Security (100% Air-Gapped & Self-Hosted)</div>
         <h1>Stop losing millions on broken requirements.<br><span class="gradient-text">Build it right the first time.</span></h1>
         <p class="hero-sub">
           <strong>We believe software engineering should be a victory, not a guessing game.</strong>
-          Right now, your team is wasting endless hours rewriting code because Agile promises speed but delivers a total disaster of rework. Agile Agent is the ultimate AI weapon that gives you total codebase dominance. Imagine shipping flawless systems that never come back as bugs.
+          Right now, your team is wasting endless hours rewriting code because Agile promises speed but delivers a total disaster of rework. Agile Agent runs exclusively on your infrastructure, giving you total codebase dominance without a single line of code leaving your network.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg">
-            <span>📞</span> Talk to Andres Now
+            <span>📞</span> Request an Architecture Review
           </a>
           <a href="#problem" class="btn btn-ghost btn-lg">See the ultimate solution →</a>
         </div>
+
+        <div class="hero-quote">
+          <p>"I watched enterprise teams waste millions building the wrong features. So I built the AI agent to stop it."</p>
+          <div class="hero-quote-author">
+            <img src="/founder.jpg" alt="Andres" class="quote-avatar" />
+            <span><strong>Andres Eloy Sanchez Vargas</strong> — Architect of 500M req/day systems</span>
+          </div>
+        </div>
+
         <div class="hero-image">
           <div class="hero-image-glow"></div>
-          <img src="/hero-screenshot.png" alt="Agile Agent UI showing AI-assisted requirements refinement with GitLab and Jira integration" />
+          <div class="blast-radius-overlay">
+            <div class="overlay-header">🛡️ Blast Radius Simulator</div>
+            <div class="overlay-body">
+              <span class="status-warning">⚠️ Breaking Change Detected in Payment API</span>
+              <p>Epic "One-Click Checkout" conflicts with existing downstream schema in 3 microservices.</p>
+            </div>
+          </div>
+          <img src="/hero-screenshot.png" alt="Agile Agent Blast Radius Simulator catching architectural errors before the sprint starts" />
         </div>
       </div>
     </section>
@@ -212,35 +228,22 @@
           <h2>Exclusive Access for Ambitious Engineering Teams</h2>
           <p>We work closely with elite teams ready to eliminate rework permanently.</p>
         </div>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="pricing-trial-badge">14-day free trial</div>
-            <div class="pricing-tier">Starter</div>
-            <div class="pricing-price">€3.99<span>/seat/mo</span></div>
-            <div class="pricing-period">+ token usage costs</div>
-            <ul class="pricing-features">
-              <li>✅ All integrations (GitLab, Jira, Confluence)</li>
-              <li>✅ Unlimited conversations</li>
-              <li>✅ Self-hosted deployment</li>
-              <li>✅ Bring your own LLM API key</li>
-              <li>✅ Community support</li>
-            </ul>
-            <a href="#contact" class="btn btn-ghost" style="width: 100%; justify-content: center">Request Early Access</a>
-          </div>
+        <div class="pricing-grid pricing-grid-2">
           <div class="pricing-card featured">
             <div class="pricing-popular">Most Popular</div>
             <div class="pricing-tier">Team</div>
-            <div class="pricing-price"><span class="price-strikethrough">€99</span> €79<span>/seat/mo</span></div>
-            <div class="pricing-period">+ token usage costs · on-premise · launch price</div>
+            <div class="pricing-price">€99<span>/seat/mo</span></div>
+            <div class="pricing-period">+ token usage costs · on-premise</div>
             <ul class="pricing-features">
-              <li>✅ Everything in Starter</li>
+              <li>✅ All integrations (GitLab, Jira, Confluence)</li>
+              <li>✅ Blast Radius Simulator & AI Generation</li>
               <li>✅ Up to 50 seats</li>
               <li>✅ SSO / Azure AD integration</li>
               <li>✅ Priority support (24h SLA)</li>
               <li>✅ Custom system prompts per team</li>
               <li>✅ Usage analytics dashboard</li>
             </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center">📞 Talk to Founder (Highly Recommended)</a>
+            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center">📞 Book a Deployment Pilot</a>
           </div>
           <div class="pricing-card">
             <div class="pricing-tier">Enterprise</div>
@@ -567,6 +570,89 @@ a:hover { color: var(--text); }
   background: var(--gradient);
   opacity: 0.15;
   z-index: -1;
+}
+
+/* ── Hero Quote & Blast Radius UI ────────────────────────────────────── */
+.hero-quote {
+  margin: 0 auto 64px;
+  max-width: 600px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: left;
+}
+.hero-quote p {
+  font-size: 16px;
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.hero-quote-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.quote-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-strong);
+}
+.hero-quote-author span {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.hero-quote-author strong {
+  color: var(--text);
+}
+
+.blast-radius-overlay {
+  position: absolute;
+  top: 24px;
+  right: -24px;
+  width: 340px;
+  background: rgba(18, 18, 30, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--red);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 40px rgba(239, 68, 68, 0.15);
+  text-align: left;
+  z-index: 10;
+  animation: float 6s ease-in-out infinite;
+}
+.overlay-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+.overlay-body {
+  padding: 16px;
+}
+.status-warning {
+  display: inline-block;
+  color: var(--red);
+  background: var(--red-glow);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.overlay-body p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 /* ── Stats Bar ──────────────────────────────────────────────────────── */
@@ -896,6 +982,12 @@ a:hover { color: var(--text); }
   align-items: start;
 }
 
+.pricing-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .pricing-card {
   padding: 36px 32px;
   border-radius: var(--radius);
@@ -1149,6 +1241,7 @@ a:hover { color: var(--text); }
   .features-grid { grid-template-columns: 1fr; }
   .problems-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-grid-2 { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr; gap: 32px; }
   .ask-grid { grid-template-columns: 1fr 1fr; }
   .hero-actions { flex-direction: column; align-items: center; }
@@ -1161,5 +1254,6 @@ a:hover { color: var(--text); }
   .founder-photo { width: 140px; height: 140px; }
   .founder-stats { justify-content: center; }
   .founder-links { justify-content: center; }
+  .blast-radius-overlay { position: relative; top: 0; right: 0; width: 100%; border-radius: 0; animation: none; }
 }
 </style>
