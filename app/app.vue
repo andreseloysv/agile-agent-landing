@@ -1368,22 +1368,41 @@ a:hover { color: var(--text); }
 
 /* ── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
+  /* Nav */
+  .logo-text { display: none; }
+  .nav-links a:not(.btn) { display: none; }
+  .nav-links .btn-sm { padding: 8px 14px; font-size: 13px; white-space: nowrap; }
+  .nav-links { gap: 12px; }
+
+  /* Hero */
+  .hero { padding: 120px 0 60px; }
+  .hero-actions { flex-direction: column; align-items: stretch; max-width: 400px; margin-left: auto; margin-right: auto; }
+  .hero-actions .btn { justify-content: center; padding: 14px 24px; font-size: 15px; }
+
+  /* Grids */
   .features-grid { grid-template-columns: 1fr; }
   .problems-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
   .pricing-grid-2 { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr; gap: 32px; }
   .ask-grid { grid-template-columns: 1fr 1fr; }
-  .hero-actions { flex-direction: column; align-items: center; }
-  .nav-links a:not(.btn) { display: none; }
+
+  /* Sections */
+  .problem-section, .features, .pricing, .faq-section, .founder-section, .contact-section { padding: 80px 0; }
+  .ask-section { padding: 80px 0; }
   .integration-logos { gap: 32px; }
   .contact-card { padding: 48px 24px; }
   .ask-card { padding: 48px 24px; }
-  .contact-actions { flex-direction: column; align-items: center; }
+  .contact-actions { flex-direction: column; align-items: stretch; max-width: 400px; margin-left: auto; margin-right: auto; }
+  .contact-actions .btn { justify-content: center; }
+
+  /* Founder */
   .founder-card { flex-direction: column; text-align: center; padding: 32px 24px; }
   .founder-photo { width: 140px; height: 140px; }
   .founder-stats { justify-content: center; }
   .founder-links { justify-content: center; }
+
+  /* Blast radius */
   .blast-radius-overlay { position: relative; top: 0; right: 0; width: 100%; border-radius: 0; animation: none; }
 }
 </style>
