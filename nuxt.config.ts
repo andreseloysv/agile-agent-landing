@@ -28,6 +28,9 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap' },
         { rel: 'icon', type: 'image/png', href: '/icon.png' },
       ],
+      script: [
+        { src: 'https://static.cloudflareinsights.com/beacon.min.js', defer: true, 'data-cf-beacon': '{"token": "cabcdee7b9664a8785a18a62b2fbb17a"}' },
+      ],
     },
   },
 })
