@@ -11,6 +11,9 @@
           <a href="#problem">The Problem</a>
           <a href="#features">How It Works</a>
           <a href="#pricing">Pricing</a>
+          <button class="theme-toggle" @click="toggleTheme" :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'" :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
+            <span class="theme-toggle-icon">{{ isDark ? '☀️' : '🌙' }}</span>
+          </button>
           <a href="#contact" class="btn btn-primary btn-sm">Request a Demo</a>
         </div>
       </div>
@@ -243,7 +246,7 @@
               <li>✅ Custom system prompts per team</li>
               <li>✅ Usage analytics dashboard</li>
             </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center">📞 Book a Deployment Pilot</a>
+            <a href="#contact" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center">📞 Book a Deployment Pilot</a>
           </div>
           <div class="pricing-card">
             <div class="pricing-tier">Enterprise</div>
@@ -365,22 +368,96 @@
 
 <script setup lang="ts">
 const copied = ref(false);
+const isDark = ref(false);
 
 function copyInstall() {
   navigator.clipboard.writeText('curl -fsSL https://raw.githubusercontent.com/andreseloysv/agile-agent-release/main/install.sh | bash');
   copied.value = true;
   setTimeout(() => copied.value = false, 2000);
 }
+
+function applyTheme(dark: boolean) {
+  isDark.value = dark;
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+}
+
+function toggleTheme() {
+  const newDark = !isDark.value;
+  applyTheme(newDark);
+  localStorage.setItem('theme', newDark ? 'dark' : 'light');
+}
+
+onMounted(() => {
+  const stored = localStorage.getItem('theme');
+  if (stored) {
+    applyTheme(stored === 'dark');
+  } else {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(prefersDark);
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      applyTheme(e.matches);
+    }
+  });
+});
 </script>
 
 <style>
 /* ── Reset & Base ───────────────────────────────────────────────────── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* ── Light theme (default) — Deutsche Bahn design language ──────── */
 :root {
+  --bg: #ffffff;
+  --bg-card: #f0f3f5;
+  --bg-card-hover: #e5eaee;
+  --bg-subtle: rgba(36, 38, 41, 0.04);
+  --border: #5f656d1a;
+  --border-strong: #5f656d2e;
+  --text: #242629;
+  --text-secondary: #646973;
+  --text-muted: #afb4bb;
+  --accent: #ec0016;
+  --accent-light: #c50014;
+  --accent-glow: rgba(236, 0, 22, 0.08);
+  --gradient: linear-gradient(135deg, #ec0016 0%, #f35045 50%, #ff7a5c 100%);
+  --red: #ec0016;
+  --red-glow: rgba(236, 0, 22, 0.08);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --font: 'Inter', -apple-system, system-ui, sans-serif;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --glow-color: rgba(236, 0, 22, 0.06);
+  --glow-accent: rgba(236, 0, 22, 0.10);
+  --shadow-color: rgba(36, 38, 41, 0.08);
+  --shadow-heavy: rgba(36, 38, 41, 0.12);
+  --btn-primary-bg: linear-gradient(135deg, #ec0016 0%, #c50014 100%);
+  --btn-primary-shadow: rgba(236, 0, 22, 0.20), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  --btn-primary-hover-bg: linear-gradient(135deg, #c50014 0%, #9b000e 100%);
+  --btn-primary-hover-shadow: rgba(236, 0, 22, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  --btn-ghost-bg: rgba(36, 38, 41, 0.02);
+  --btn-ghost-hover-bg: rgba(36, 38, 41, 0.06);
+  --btn-ghost-hover-border: rgba(36, 38, 41, 0.22);
+  --btn-ghost-hover-shadow: rgba(36, 38, 41, 0.08);
+  --card-hover-shadow: rgba(36, 38, 41, 0.10);
+  --pricing-featured-shadow: rgba(236, 0, 22, 0.10);
+  --trial-badge-bg: rgba(34, 197, 94, 0.10);
+  --trial-badge-color: #16a34a;
+  --trial-badge-border: rgba(34, 197, 94, 0.20);
+  --faq-open-border: rgba(236, 0, 22, 0.25);
+  --blast-overlay-bg: rgba(255, 255, 255, 0.95);
+  --blast-overlay-shadow: rgba(236, 0, 22, 0.12);
+  --overlay-header-color: var(--text);
+}
+
+/* ── Dark theme — preserves original design ─────────────────────── */
+:root[data-theme='dark'] {
   --bg: #08080f;
   --bg-card: #12121e;
   --bg-card-hover: #1a1a2e;
+  --bg-subtle: rgba(255, 255, 255, 0.03);
   --border: rgba(255, 255, 255, 0.06);
   --border-strong: rgba(255, 255, 255, 0.1);
   --text: #e8e8f0;
@@ -392,9 +469,28 @@ function copyInstall() {
   --gradient: linear-gradient(135deg, #7c5cff 0%, #c084fc 50%, #f472b6 100%);
   --red: #ef4444;
   --red-glow: rgba(239, 68, 68, 0.12);
-  --radius: 12px;
-  --radius-lg: 20px;
-  --font: 'Inter', -apple-system, system-ui, sans-serif;
+  --nav-bg: rgba(8, 8, 15, 0.8);
+  --glow-color: rgba(124, 92, 255, 0.15);
+  --glow-accent: rgba(124, 92, 255, 0.12);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-heavy: rgba(0, 0, 0, 0.5);
+  --btn-primary-bg: linear-gradient(135deg, #7c5cff 0%, #a855f7 100%);
+  --btn-primary-shadow: rgba(124, 92, 255, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  --btn-primary-hover-bg: linear-gradient(135deg, #9b7fff 0%, #c084fc 100%);
+  --btn-primary-hover-shadow: rgba(124, 92, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  --btn-ghost-bg: rgba(255, 255, 255, 0.02);
+  --btn-ghost-hover-bg: rgba(255, 255, 255, 0.06);
+  --btn-ghost-hover-border: rgba(255, 255, 255, 0.3);
+  --btn-ghost-hover-shadow: rgba(0, 0, 0, 0.2);
+  --card-hover-shadow: rgba(0, 0, 0, 0.3);
+  --pricing-featured-shadow: rgba(124, 92, 255, 0.15);
+  --trial-badge-bg: rgba(34, 197, 94, 0.12);
+  --trial-badge-color: #4ade80;
+  --trial-badge-border: rgba(34, 197, 94, 0.2);
+  --faq-open-border: rgba(124, 92, 255, 0.3);
+  --blast-overlay-bg: rgba(18, 18, 30, 0.95);
+  --blast-overlay-shadow: rgba(239, 68, 68, 0.15);
+  --overlay-header-color: #fff;
 }
 
 html { scroll-behavior: smooth; }
@@ -432,20 +528,20 @@ a:hover { color: var(--text); }
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
+  background: var(--btn-primary-bg);
   color: #fff;
-  box-shadow: 0 8px 32px rgba(124, 92, 255, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px var(--btn-primary-shadow);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--accent-light) 0%, #c084fc 100%);
-  box-shadow: 0 12px 40px rgba(124, 92, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  background: var(--btn-primary-hover-bg);
+  box-shadow: 0 12px 40px var(--btn-primary-hover-shadow);
   transform: translateY(-2px);
   color: #fff;
 }
 
 .btn-ghost {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--btn-ghost-bg);
   color: var(--text-secondary);
   border: 1px solid var(--border-strong);
   backdrop-filter: blur(10px);
@@ -453,10 +549,10 @@ a:hover { color: var(--text); }
 
 .btn-ghost:hover {
   color: var(--text);
-  border-color: rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--btn-ghost-hover-border);
+  background: var(--btn-ghost-hover-bg);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px var(--btn-ghost-hover-shadow);
 }
 
 .btn-sm { padding: 10px 20px; font-size: 14px; }
@@ -467,7 +563,7 @@ a:hover { color: var(--text); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(8, 8, 15, 0.8);
+  background: var(--nav-bg);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
@@ -480,7 +576,8 @@ a:hover { color: var(--text); }
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo-icon { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+.logo-icon { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; flex-shrink: 0; transition: box-shadow 0.3s ease, border-color 0.3s ease; border: 1px solid transparent; }
+:root[data-theme='dark'] .logo-icon { box-shadow: 0 0 12px rgba(124, 92, 255, 0.35), 0 0 4px rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.1); }
 .logo-text { font-size: 18px; font-weight: 700; color: var(--text); }
 
 .nav-links {
@@ -489,6 +586,39 @@ a:hover { color: var(--text); }
   gap: 32px;
   font-size: 14px;
   font-weight: 500;
+}
+
+/* ── Theme Toggle ──────────────────────────────────────────────────── */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  background: var(--bg-subtle);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding: 0;
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  background: var(--btn-ghost-hover-bg);
+  border-color: var(--btn-ghost-hover-border);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+.theme-toggle:active {
+  transform: translateY(0px) scale(0.95);
+}
+.theme-toggle-icon {
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+.theme-toggle:hover .theme-toggle-icon {
+  transform: rotate(20deg);
 }
 
 /* ── Hero ────────────────────────────────────────────────────────────── */
@@ -506,7 +636,7 @@ a:hover { color: var(--text); }
   transform: translateX(-50%);
   width: 800px;
   height: 600px;
-  background: radial-gradient(ellipse, rgba(124, 92, 255, 0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse, var(--glow-color) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -518,7 +648,7 @@ a:hover { color: var(--text); }
   font-weight: 500;
   color: var(--accent-light);
   background: var(--accent-glow);
-  border: 1px solid rgba(124, 92, 255, 0.2);
+  border: 1px solid var(--accent-glow);
   margin-bottom: 32px;
 }
 
@@ -560,7 +690,7 @@ a:hover { color: var(--text); }
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border-strong);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5), 0 0 60px rgba(124, 92, 255, 0.1);
+  box-shadow: 0 40px 100px var(--shadow-heavy), 0 0 60px var(--glow-accent);
 }
 .hero-image img { width: 100%; display: block; }
 .hero-image-glow {
@@ -577,7 +707,7 @@ a:hover { color: var(--text); }
   margin: 0 auto 64px;
   max-width: 600px;
   padding: 24px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-subtle);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   text-align: left;
@@ -614,11 +744,11 @@ a:hover { color: var(--text); }
   top: 24px;
   right: -24px;
   width: 340px;
-  background: rgba(18, 18, 30, 0.95);
+  background: var(--blast-overlay-bg);
   backdrop-filter: blur(12px);
   border: 1px solid var(--red);
   border-radius: var(--radius);
-  box-shadow: 0 20px 40px rgba(239, 68, 68, 0.15);
+  box-shadow: 0 20px 40px var(--blast-overlay-shadow);
   text-align: left;
   z-index: 10;
   animation: float 6s ease-in-out infinite;
@@ -628,7 +758,7 @@ a:hover { color: var(--text); }
   border-bottom: 1px solid var(--border);
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: var(--overlay-header-color);
 }
 .overlay-body {
   padding: 16px;
@@ -709,7 +839,7 @@ a:hover { color: var(--text); }
   letter-spacing: 0.08em;
   color: var(--accent-light);
   background: var(--accent-glow);
-  border: 1px solid rgba(124, 92, 255, 0.15);
+  border: 1px solid var(--accent-glow);
   margin-bottom: 20px;
 }
 
@@ -748,7 +878,7 @@ a:hover { color: var(--text); }
 .problem-card:hover {
   background: var(--bg-card-hover);
   transform: translateY(-2px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 32px var(--card-hover-shadow);
 }
 
 .problem-icon {
@@ -789,7 +919,7 @@ a:hover { color: var(--text); }
   background: var(--bg-card-hover);
   border-color: var(--border-strong);
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px var(--card-hover-shadow);
 }
 
 .feature-icon {
@@ -883,8 +1013,8 @@ a:hover { color: var(--text); }
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(124, 92, 255, 0.3);
-  box-shadow: 0 0 40px rgba(124, 92, 255, 0.15);
+  border: 3px solid var(--accent-glow);
+  box-shadow: 0 0 40px var(--pricing-featured-shadow);
 }
 
 .founder-content h2 {
@@ -913,7 +1043,7 @@ a:hover { color: var(--text); }
   color: var(--text-secondary);
   padding: 8px 14px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-subtle);
   border: 1px solid var(--border);
 }
 .founder-stat strong { color: var(--text); }
@@ -954,7 +1084,7 @@ a:hover { color: var(--text); }
 .ask-item {
   padding: 24px 16px;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-subtle);
   border: 1px solid var(--border);
 }
 
@@ -998,12 +1128,12 @@ a:hover { color: var(--text); }
 }
 .pricing-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px var(--card-hover-shadow);
 }
 
 .pricing-card.featured {
   border-color: var(--accent);
-  box-shadow: 0 0 40px rgba(124, 92, 255, 0.15);
+  box-shadow: 0 0 40px var(--pricing-featured-shadow);
 }
 
 .pricing-popular {
@@ -1122,9 +1252,9 @@ a:hover { color: var(--text); }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  background: rgba(34, 197, 94, 0.12);
-  color: #4ade80;
-  border: 1px solid rgba(34, 197, 94, 0.2);
+  background: var(--trial-badge-bg);
+  color: var(--trial-badge-color);
+  border: 1px solid var(--trial-badge-border);
   margin-bottom: 12px;
 }
 
@@ -1158,7 +1288,7 @@ a:hover { color: var(--text); }
   border-color: var(--border-strong);
 }
 .faq-item[open] {
-  border-color: rgba(124, 92, 255, 0.3);
+  border-color: var(--faq-open-border);
   background: var(--bg-card-hover);
 }
 
@@ -1232,7 +1362,7 @@ a:hover { color: var(--text); }
   transform: translateX(-50%);
   width: 500px;
   height: 300px;
-  background: radial-gradient(ellipse, rgba(124, 92, 255, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse, var(--glow-accent) 0%, transparent 70%);
   pointer-events: none;
 }
 
